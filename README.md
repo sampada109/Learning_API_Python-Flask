@@ -8,6 +8,7 @@ This repository is dedicated to my journey of learning how to build REST APIs us
 - [Usage](#usage)
 - [Learning Steps](#learning-steps)
   - [Step 1: Setting up the Project](#step-1-setting-up-the-project)
+  - [Step 2: Creating the Flask App](#step-2-creating-the-flask-app)
 - [Resources](#resources)
 
 ## Installation
@@ -32,6 +33,16 @@ This repository is dedicated to my journey of learning how to build REST APIs us
 - Activating(on windows): ```.venv/Scripts/activate```
 5. Created a `requirements.txt` file and added Flask as a dependency.
 6. Installed the project dependencies: ```pip install -r requirements.txt```
+
+### Step 2: Creating the Flask App
+
+1. Created an `app.py` file to write the Flask code for the REST API.
+2. In `app.py`, imported the Flask class from flask module and created a new Flask application instance ( app = Flask() ).
+3. Running the `app.py` file in terminal : ```flask run```
+4. When file will run, url will be provided which we can open on any browser.
+5. **404 error will occur means there is no page found, But in this case it's fine because we have not define any route or view function in our app.py file to shown anything.
+
+- SOME IMPORTANT SETUP (you might find helpfull)
 
 ## Resources
 

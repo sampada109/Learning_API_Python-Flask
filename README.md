@@ -1,6 +1,6 @@
-# Learning REST APIs with Python Flask
+# Learning APIs with Python Flask
 
-This repository is dedicated to my journey of learning how to build REST APIs using Python Flask. As I progress through various concepts and implementations, I will document my steps and learnings in this README file.
+This repository is dedicated to my journey of learning how to build APIs using Python Flask. As I progress through various concepts and implementations, I will document my steps and learnings in this README file.
 
 In this we will take an example of Cafe Management , where we will create API Endpoints for different operations such as-
 - GET Items: Retrieving all the items.

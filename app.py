@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
 
@@ -27,6 +27,15 @@ cafe_menu = [
 @app.route('/getmenu')
 def get_menu():
     return {'menu':cafe_menu}
+
+
+@app.route('/additem', methods=['POST'])
+def add_item():
+    if request.method == 'POST':  
+        new_item = request.get_json()
+        print(new_item)
+        cafe_menu.append(new_item)
+        return {'message': 'new item added successfully'}, 201
 
 
 if __name__=='__main__':

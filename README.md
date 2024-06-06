@@ -62,6 +62,23 @@ In this we will take an example of Cafe Management , where we will create API En
 5. Returned a JSON response containing the list of cafe items.
 
 
+## Testing with Postman:
+
+- While it's straightforward to fetch items using a browser for a GET request, but testing other functionalities like adding, updating, or deleting can be complicated and thus requires a more robust tool. This is where Postman comes in.
+- Postman is a popular for testing API, that allows you to easily:
+1. Send HTTP requests: You can construct and send various types of HTTP requests (GET, POST, PUT, DELETE) to your API endpoints.
+2. Set request parameters: Postman enables you to define headers, body parameters, and URL parameters for your requests, mimicking real-world usage scenarios.
+3. View and analyze responses: Postman displays the response status code, headers, and body content, allowing you to verify if your API is functioning as expected.
+
+- ### Using Postman to Test Our API:
+1. Download and install Postman https://www.postman.com/.
+2. OR you can install its extension in VSCode directly.
+3. Create a new collection/Folder, then add Request(there will options for different request method).
+4. Select a GET request, add the `base url(http://127.0.0.1:5000)` and extend it with `/getmenu` endpoint to retrieve the list of cafe items.
+5. Send the request and observe the response in Postman. You should see the JSON response containing the list of items.
+6. You can also save the request and create a new request for another endpoint.
+
+
 ## Resources
 
 (List any resources, tutorials, or documentation used so far)
